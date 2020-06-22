@@ -13,8 +13,8 @@
 	E0 = 520956;
 	S0 = N0-E0-I0-R0-D0;
 
-	%lam = lambda(onDay, S0,I0);
-	lam =  0.000000000090645*10;
+	lam = lambda(onDay, S0,I0);
+	
 	N = S+E+I+R; %total population
 	dSdt = muB*N - lam*I*S - muD*S;
 	end
