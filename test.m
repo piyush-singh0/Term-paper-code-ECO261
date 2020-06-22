@@ -1,6 +1,6 @@
 clear ; close all; clc;
 a = csvread('qwerty.csv');
-x= a(:,5);
+x= a(:,2);
 days = (1:size(x,1))';
 fprintf('plotting line graph.\n');
 plot(days,x)
@@ -27,7 +27,7 @@ pause;
 close all;
  
 fprintf('Appling machine learing algorithm...\n');
-[theta cost] = rateofchangeofR()
+[theta cost] = rateofchangeofS()
 m = days_X(days);
 m = [ones(size(m,1),1) m];
 m = m*theta;
